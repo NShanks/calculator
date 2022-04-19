@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="js-file.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        Calculator
+    </div>
+
+    <div class='wrapper'>
+        <div id='display'></div>
+        <div id='display2'></div>
+    </div>
+
+    <div class='buttons'>
+        <div class='numbers'>
+            <div class='num789'>
+                <button id='seven' onclick="keyPress('7')">7</button>
+                <button id='eight' onclick="keyPress('8')">8</button>
+                <button id='nine' onclick="keyPress('9')">9</button>
+            </div>
+            <div class='num456'>
+                <button id='four' onclick="keyPress('4')">4</button>
+                <button id='five' onclick="keyPress('5')">5</button>
+                <button id='six' onclick="keyPress('6')">6</button>
+            </div>
+            <div class='num456'>
+                <button id='one' onclick="keyPress('1')">1</button>
+                <button id='two' onclick="keyPress('2')">2</button>
+                <button id='three' onclick="keyPress('3')">3</button>
+            </div>
+            <div class='num0'>
+                <button id='zero' onclick="keyPress('0')">0</button>
+                <button id='dot' onclick="keyPress('.')">.</button>
+                <button id='clear' onclick="wipe()">C</button>
+            </div>
+        </div>
+
+        <div class='ops'>
+            <button id='divide' onclick="divide()">/</button>
+            <button id='mult' onclick="mult()">X</button>
+            <button id='sub' onclick="sub()">-</button>
+            <button id='add' onclick="add()">+</button>
+            <button id='equals' onclick="equals()">=</button>
+        </div>
+    </div>
+</body>
+</html>
